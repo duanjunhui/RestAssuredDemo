@@ -4,7 +4,7 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 
-public class Demo {
+public class DemoTest {
     @Test
     public void testJson(){
         when().get("http://127.0.0.1:8000/restassured.json")

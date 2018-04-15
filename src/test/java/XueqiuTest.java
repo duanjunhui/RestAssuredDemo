@@ -5,7 +5,7 @@ import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
 
-public class Xueqiu {
+public class XueqiuTest {
     @Test
     public void testSearch() {
         //信任https的任何证书
@@ -34,7 +34,7 @@ public class Xueqiu {
         useRelaxedHTTPSValidation();
 
         given()
-                .header("User-Agent", "Xueqiu Android 10.5")
+                .header("User-Agent", "XueqiuTest Android 10.5")
                 .queryParam("_t", "1GENYMOTION6863ec148419d5df6eac0af60508137f.5204427043.1523766643409.1523772559508")
                 .queryParam("_s", "97872d")
                 .cookie("xq_a_token", "565b4ce5b4033c835809ae06cea936844fe1bb5e")
